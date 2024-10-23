@@ -1,4 +1,4 @@
-# Ansible playbook for setup ICM kubernetes cluster
+# Ansible playbook for setup kubernetes cluster
 
 ## 1. Install Ansible
 
