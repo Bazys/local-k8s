@@ -1,0 +1,24 @@
+# Registries defined within cri-o.
+# crio_insecure_registries:
+#   - 10.0.0.2:5000
+
+# Auth config for the registries
+# crio_registry_auth:
+#   - registry: 10.0.0.2:5000
+#     username: user
+#     password: pass
+crio_registries:
+  - prefix: docker.io
+    insecure: false
+    blocked: false
+    location: registry-1.docker.io
+    unqualified: false
+    mirrors:
+      - location: mirror.gcr.io
+        insecure: false
+      - location: cr.yandex/mirror
+        insecure: false
+      - location: public.ecr.aws
+        insecure: false
+      - location: quay.io
+        insecure: false
