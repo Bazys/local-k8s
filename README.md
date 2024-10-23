@@ -11,6 +11,7 @@ pip install -r requirements.txt
 ## 2. Install kubespray collection
 
 ```sh
+source .venv/bin/activate
 ansible-galaxy install -r requirements.yml
 ```
 
