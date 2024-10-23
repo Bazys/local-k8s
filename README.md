@@ -17,11 +17,11 @@ ansible-galaxy install -r requirements.yml
 ## 3. Reset old cluster
 
 ```sh
-ansible-playbook -i inventory/hosts.yaml  --become -u root reset.yml
+ansible-playbook -i inventory/inventory.ini -u root reset.yml
 ```
 
 ## 4. Setup new cluster
 
 ```sh
-ansible-playbook -i inventory/hosts.yaml  --become -u root cluster.yml
+ansible-playbook -i inventory/inventory.ini -u root cluster.yml
 ```
